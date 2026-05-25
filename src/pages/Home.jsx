@@ -1,5 +1,5 @@
 import Navbar from "../Components/layout/Navbar"
-import Hero from "../Components/sections/Hero";
+import Hero from "../Components/Sections/Hero";
 import Skills from "../Components/Sections/Skills"
 import Projects from "../Components/Sections/Projects";
 import Experience from "../Components/Sections/Experience";
