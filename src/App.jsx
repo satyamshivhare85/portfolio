@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 // Correct Import
-import resumee from "./assets/resumee.pdf";
+import resumee from "./../public/resumee.pdf";
 
 export default function App() {
 

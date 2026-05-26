@@ -13,14 +13,14 @@ export default function CTA() {
     {
       name: "LinkedIn",
     //   icon: <Linkedin className="w-5 h-5 mb-2" />,
-      link: "https://linkedin.com/in/your-linkedin-profile", // Update this link
+      link: "www.linkedin.com/in/satyam-shivhare-5573852b4", // Update this link
       // Blue glow for LinkedIn
       hoverStyles: "hover:border-blue-500/50 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]",
     },
     {
       name: "LeetCode",
       icon: <Code2 className="w-5 h-5 mb-2" />,
-      link: "https://leetcode.com/your-leetcode-profile", // Update this link
+      link: "https://leetcode.com/satyamshivhare85", // Update this link
       // Amber/Yellow glow for LeetCode
       hoverStyles: "hover:border-amber-500/50 hover:text-amber-400 hover:shadow-[0_0_20px_rgba(245,158,11,0.2)]",
     },

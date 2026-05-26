@@ -1,294 +1,83 @@
-// export const PROJECTS = [
+// import React from "react";
+// import { 
+//   ShieldCheck, 
+//   Cpu, 
+//   Cloud, 
+//   Activity, 
+//   TerminalSquare 
+// } from "lucide-react";
+
+// export const TOP_PROJECTS = [
 //   {
 //     title: "VoteMitra",
-
 //     tagline: "AI-Powered Secure Voting Infrastructure",
-
-//     description:
-//       "Designed and developed a production-oriented voting platform leveraging facial recognition, duplicate-vote prevention, and real-time identity verification. Engineered for high security, low latency, and scalable citizen authentication.",
-
-//     metrics: [
-//       ">90% Face Recognition Accuracy",
-//       "-35% Inference Latency",
-//       "O(1) Identity Lookup",
-//     ],
-
-//     tech: [
-//       "Python",
-//       "OpenCV",
-//       "KNN",
-//       "TensorFlow.js",
-//       "Node.js",
-//       "Express.js",
-//       "MongoDB",
-//     ],
-
+//     description: "Designed and developed a production-oriented voting platform leveraging facial recognition, duplicate-vote prevention, and real-time identity verification. Engineered for high security, low latency, and scalable citizen authentication.",
+//     metrics: [">90% Face Recognition Accuracy", "-35% Inference Latency", "O(1) Identity Lookup"],
+//     tech: ["Python", "OpenCV", "TensorFlow.js", "Node.js", "MongoDB"],
 //     award: "Hackathon Winner",
-
 //     type: "AI & Security",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Government Tech",
+//     icon: <ShieldCheck className="w-5 h-5" />,
+//     color: "emerald",
+//     glow: "from-emerald-500/20",
+//     textHover: "group-hover:text-emerald-400",
+//     borderHover: "hover:border-emerald-500/50",
 //   },
-
 //   {
 //     title: "SecureAuthX",
-
 //     tagline: "Enterprise Authentication & Authorization System",
-
-//     description:
-//       "Built a scalable backend authentication architecture implementing JWT authentication, RBAC authorization, Redis caching, CSRF protection, and secure session handling optimized for production-grade applications.",
-
-//     metrics: [
-//       "40% Faster Read Operations",
-//       "RBAC Authorization",
-//       "Redis Session Optimization",
-//     ],
-
-//     tech: [
-//       "Node.js",
-//       "Express.js",
-//       "JWT",
-//       "Redis",
-//       "PostgreSQL",
-//       "Prisma",
-//     ],
-
+//     description: "Built a scalable backend authentication architecture implementing JWT authentication, RBAC authorization, Redis caching, CSRF protection, and secure session handling optimized for production-grade applications.",
+//     metrics: ["40% Faster Read Operations", "RBAC Authorization", "Redis Session Optimization"],
+//     tech: ["Node.js", "Express.js", "JWT", "Redis", "PostgreSQL", "Prisma"],
 //     award: "Freelance Project",
-
 //     type: "Backend Security",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Production Ready",
+//     icon: <Cpu className="w-5 h-5" />,
+//     color: "cyan",
+//     glow: "from-cyan-500/20",
+//     textHover: "group-hover:text-cyan-400",
+//     borderHover: "hover:border-cyan-500/50",
 //   },
-
 //   {
 //     title: "VibeCode",
-
 //     tagline: "AI-Powered Cloud Development Environment",
-
-//     description:
-//       "Developed a browser-based cloud IDE with isolated Docker execution environments, Monaco Editor integration, and secure containerized runtime execution supporting scalable remote code execution.",
-
-//     metrics: [
-//       "Secure Docker Isolation",
-//       "Reduced Container Startup",
-//       "Cloud Execution Runtime",
-//     ],
-
-//     tech: [
-//       "Next.js",
-//       "Docker",
-//       "Monaco Editor",
-//       "WebContainers",
-//       "Node.js",
-//     ],
-
+//     description: "Developed a browser-based cloud IDE with isolated Docker execution environments, Monaco Editor integration, and secure containerized runtime execution supporting scalable remote code execution.",
+//     metrics: ["Secure Docker Isolation", "Reduced Container Startup", "Cloud Execution Runtime"],
+//     tech: ["Next.js", "Docker", "Monaco Editor", "WebContainers", "Node.js"],
 //     award: "Top Innovation",
-
 //     type: "Full Stack",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Cloud Native",
+//     icon: <Cloud className="w-5 h-5" />,
+//     color: "fuchsia",
+//     glow: "from-fuchsia-500/20",
+//     textHover: "group-hover:text-fuchsia-400",
+//     borderHover: "hover:border-fuchsia-500/50",
 //   },
-
 //   {
 //     title: "EchoSphere",
-
 //     tagline: "Real-Time AI Communication Platform",
-
-//     description:
-//       "Engineered an event-driven communication platform supporting ultra-low latency messaging and scalable real-time synchronization using WebSockets and distributed backend systems.",
-
-//     metrics: [
-//       "Real-time Event Sync",
-//       "Low Latency Messaging",
-//       "Distributed Event Handling",
-//     ],
-
-//     tech: [
-//       "Socket.io",
-//       "WebSockets",
-//       "Redis",
-//       "Node.js",
-//       "MongoDB",
-//     ],
-
+//     description: "Engineered an event-driven communication platform supporting ultra-low latency messaging and scalable real-time synchronization using WebSockets and distributed backend systems.",
+//     metrics: ["Real-time Event Sync", "Low Latency Messaging", "Distributed Event Handling"],
+//     tech: ["Socket.io", "WebSockets", "Redis", "Node.js", "MongoDB"],
 //     type: "Networking",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Scalable Architecture",
+//     icon: <Activity className="w-5 h-5" />,
+//     color: "violet",
+//     glow: "from-violet-500/20",
+//     textHover: "group-hover:text-violet-400",
+//     borderHover: "hover:border-violet-500/50",
 //   },
-
 //   {
 //     title: "High-Performance Java Server",
-
 //     tagline: "Custom TCP-Based Web Server",
-
-//     description:
-//       "Implemented a low-level multithreaded web server from scratch using Java sockets and ExecutorService thread pools. Optimized concurrency handling and custom HTTP request parsing for performance-focused backend systems.",
-
-//     metrics: [
-//       "Thread Pool Optimization",
-//       "Reduced Context Switching",
-//       "Custom Request Parsing",
-//     ],
-
-//     tech: [
-//       "Java",
-//       "Sockets",
-//       "ExecutorService",
-//       "TCP/IP",
-//       "Multithreading",
-//     ],
-
+//     description: "Implemented a low-level multithreaded web server from scratch using Java sockets and ExecutorService thread pools. Optimized concurrency handling and custom HTTP request parsing for performance-focused backend systems.",
+//     metrics: ["Thread Pool Optimization", "Reduced Context Switching", "Custom Request Parsing"],
+//     tech: ["Java", "Sockets", "ExecutorService", "TCP/IP", "Multithreading"],
 //     type: "Systems Engineering",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Performance Engineered",
-//   },
-
-//   {
-//     title: "InventoryAI",
-
-//     tagline: "Real-Time Intelligent Inventory Platform",
-
-//     description:
-//       "Building an AI-enhanced inventory tracking ecosystem featuring predictive stock analytics, role-based dashboards, live synchronization, and scalable backend infrastructure for enterprise inventory management.",
-
-//     metrics: [
-//       "Real-time Inventory Tracking",
-//       "AI Stock Prediction",
-//       "RBAC Dashboard System",
-//     ],
-
-//     tech: [
-//       "React",
-//       "Node.js",
-//       "MongoDB",
-//       "Socket.io",
-//       "Redis",
-//       "Express.js",
-//     ],
-
-//     type: "Enterprise Platform",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Enterprise Grade",
-//   },
-
-//   {
-//     title: "DSA Analytics Tracker",
-
-//     tagline: "Competitive Programming Performance Dashboard",
-
-//     description:
-//       "Created a developer analytics dashboard tracking coding performance, problem-solving consistency, and algorithmic progress across platforms like LeetCode and GeeksforGeeks.",
-
-//     metrics: [
-//       "600+ Problems Solved",
-//       "Performance Insights",
-//       "Progress Visualization",
-//     ],
-
-//     tech: [
-//       "React",
-//       "Chart.js",
-//       "Node.js",
-//       "REST APIs",
-//     ],
-
-//     type: "Developer Tooling",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Analytics Platform",
-//   },
-
-//   {
-//     title: "AI Resume Intelligence",
-
-//     tagline: "ATS Optimization & Resume Analysis Platform",
-
-//     description:
-//       "Built an AI-driven resume analysis system capable of ATS scoring, keyword optimization, and role-based resume enhancement recommendations for internship and job applications.",
-
-//     metrics: [
-//       "ATS Optimization",
-//       "AI Resume Analysis",
-//       "Keyword Intelligence",
-//     ],
-
-//     tech: [
-//       "OpenAI API",
-//       "Next.js",
-//       "Node.js",
-//       "MongoDB",
-//     ],
-
-//     type: "AI SaaS",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "AI Powered",
-//   },
-
-//   {
-//     title: "Murf AI Media Engine",
-
-//     tagline: "Voice Generation & AI Media Pipeline",
-
-//     description:
-//       "Developed a multimedia AI workflow integrating voice synthesis APIs, automated content generation, and scalable media rendering pipelines for hackathon-grade rapid deployment.",
-
-//     metrics: [
-//       "AI Voice Synthesis",
-//       "Automated Media Pipeline",
-//       "Fast Rendering Workflow",
-//     ],
-
-//     tech: [
-//       "Murf API",
-//       "Node.js",
-//       "FFmpeg",
-//       "React",
-//     ],
-
-//     award: "Hackathon Submission",
-
-//     type: "Generative AI",
-
-//     github: "#",
-
-//     live: "#",
-
-//     status: "Experimental AI",
+//     icon: <TerminalSquare className="w-5 h-5" />,
+//     color: "amber",
+//     glow: "from-amber-500/20",
+//     textHover: "group-hover:text-amber-400",
+//     borderHover: "hover:border-amber-500/50",
 //   },
 // ];
 
-// src/data/projects.jsx
 
 import React from "react";
 import { 
@@ -296,76 +85,180 @@ import {
   Cpu, 
   Cloud, 
   Activity, 
-  TerminalSquare 
+  TerminalSquare,
+  Waves
 } from "lucide-react";
 
 export const TOP_PROJECTS = [
   {
     title: "VoteMitra",
+    duration: "Aug 2025 – Nov 2025",
     tagline: "AI-Powered Secure Voting Infrastructure",
-    description: "Designed and developed a production-oriented voting platform leveraging facial recognition, duplicate-vote prevention, and real-time identity verification. Engineered for high security, low latency, and scalable citizen authentication.",
-    metrics: [">90% Face Recognition Accuracy", "-35% Inference Latency", "O(1) Identity Lookup"],
-    tech: ["Python", "OpenCV", "TensorFlow.js", "Node.js", "MongoDB"],
+    description:
+      "Designed and developed a production-oriented smart voting platform leveraging facial recognition, duplicate-vote prevention, and real-time identity verification. Engineered for high security, low latency, and scalable citizen authentication with secure backend verification pipelines.",
+    metrics: [
+      ">90% Face Recognition Accuracy",
+      "-35% Inference Latency",
+      "O(1) Identity Lookup",
+    ],
+    tech: [
+      "Python",
+      "OpenCV",
+      "TensorFlow.js",
+      "Node.js",
+      "MongoDB",
+    ],
     award: "Hackathon Winner",
     type: "AI & Security",
+    live: "https://smart-voting-two.vercel.app/",
     icon: <ShieldCheck className="w-5 h-5" />,
     color: "emerald",
     glow: "from-emerald-500/20",
     textHover: "group-hover:text-emerald-400",
     borderHover: "hover:border-emerald-500/50",
   },
+
   {
-    title: "SecureAuthX",
-    tagline: "Enterprise Authentication & Authorization System",
-    description: "Built a scalable backend authentication architecture implementing JWT authentication, RBAC authorization, Redis caching, CSRF protection, and secure session handling optimized for production-grade applications.",
-    metrics: ["40% Faster Read Operations", "RBAC Authorization", "Redis Session Optimization"],
-    tech: ["Node.js", "Express.js", "JWT", "Redis", "PostgreSQL", "Prisma"],
-    award: "Freelance Project",
-    type: "Backend Security",
-    icon: <Cpu className="w-5 h-5" />,
-    color: "cyan",
-    glow: "from-cyan-500/20",
-    textHover: "group-hover:text-cyan-400",
-    borderHover: "hover:border-cyan-500/50",
+    title: "ArgoFloats",
+    duration: "Dec 2024 – Apr 2025",
+    tagline: "SIH Project for Smart Water Intelligence",
+    description:
+      "Built an intelligent ocean and water-monitoring platform inspired by Argo float systems for Smart India Hackathon. Focused on sensor-driven environmental monitoring, scalable data visualization, and real-time analytics for water-condition insights and predictive tracking.",
+    metrics: [
+      "Real-time Sensor Analytics",
+      "Environmental Data Monitoring",
+      "Scalable Visualization System",
+    ],
+    tech: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "IoT",
+      "Data Visualization",
+    ],
+    award: "SIH Project",
+    type: "IoT & Analytics",
+    live: "https://sih-1-z9ln.vercel.app/",
+    github: "https://github.com/satyamshivhare85/Argo_Floats.git",
+    icon: <Waves className="w-5 h-5" />,
+    color: "sky",
+    glow: "from-sky-500/20",
+    textHover: "group-hover:text-sky-400",
+    borderHover: "hover:border-sky-500/50",
   },
+
   {
     title: "VibeCode",
+    duration: "Ongoing",
     tagline: "AI-Powered Cloud Development Environment",
-    description: "Developed a browser-based cloud IDE with isolated Docker execution environments, Monaco Editor integration, and secure containerized runtime execution supporting scalable remote code execution.",
-    metrics: ["Secure Docker Isolation", "Reduced Container Startup", "Cloud Execution Runtime"],
-    tech: ["Next.js", "Docker", "Monaco Editor", "WebContainers", "Node.js"],
+    description:
+      "Developed a browser-based cloud IDE with isolated Docker execution environments, Monaco Editor integration, and secure containerized runtime execution supporting scalable remote code execution and collaborative cloud development.",
+    metrics: [
+      "Secure Docker Isolation",
+      "Reduced Container Startup",
+      "Cloud Execution Runtime",
+    ],
+    tech: [
+      "Next.js",
+      "Docker",
+      "Monaco Editor",
+      "WebContainers",
+      "Node.js",
+    ],
     award: "Top Innovation",
     type: "Full Stack",
+    live: "https://github.com/satyamshivhare85/Vibe_Code",
+    github: "https://github.com/satyamshivhare85/Vibe_Code",
     icon: <Cloud className="w-5 h-5" />,
     color: "fuchsia",
     glow: "from-fuchsia-500/20",
     textHover: "group-hover:text-fuchsia-400",
     borderHover: "hover:border-fuchsia-500/50",
   },
+
   {
     title: "EchoSphere",
+    duration: "Dec 2025",
     tagline: "Real-Time AI Communication Platform",
-    description: "Engineered an event-driven communication platform supporting ultra-low latency messaging and scalable real-time synchronization using WebSockets and distributed backend systems.",
-    metrics: ["Real-time Event Sync", "Low Latency Messaging", "Distributed Event Handling"],
-    tech: ["Socket.io", "WebSockets", "Redis", "Node.js", "MongoDB"],
+    description:
+      "Engineered an event-driven communication platform supporting ultra-low latency messaging and scalable real-time synchronization using WebSockets and distributed backend systems with modern full-stack architecture.",
+    metrics: [
+      "Real-time Event Sync",
+      "Low Latency Messaging",
+      "Distributed Event Handling",
+    ],
+    tech: [
+      "Socket.io",
+      "WebSockets",
+      "Redis",
+      "Node.js",
+      "MongoDB",
+    ],
     type: "Networking",
+    live: "https://echosphere-o3nd.onrender.com/",
+    video:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7427366311959306240/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuEkNMBoW-Kd45ocWvuqmL9N08SVk6Gbcw",
     icon: <Activity className="w-5 h-5" />,
     color: "violet",
     glow: "from-violet-500/20",
     textHover: "group-hover:text-violet-400",
     borderHover: "hover:border-violet-500/50",
   },
+
   {
     title: "High-Performance Java Server",
+    duration: "Jan 2026 – Feb 2026",
     tagline: "Custom TCP-Based Web Server",
-    description: "Implemented a low-level multithreaded web server from scratch using Java sockets and ExecutorService thread pools. Optimized concurrency handling and custom HTTP request parsing for performance-focused backend systems.",
-    metrics: ["Thread Pool Optimization", "Reduced Context Switching", "Custom Request Parsing"],
-    tech: ["Java", "Sockets", "ExecutorService", "TCP/IP", "Multithreading"],
+    description:
+      "Implemented a low-level multithreaded web server from scratch using Java sockets and ExecutorService thread pools. Optimized concurrency handling and custom HTTP request parsing for performance-focused backend systems.",
+    metrics: [
+      "Thread Pool Optimization",
+      "Reduced Context Switching",
+      "Custom Request Parsing",
+    ],
+    tech: [
+      "Java",
+      "Sockets",
+      "ExecutorService",
+      "TCP/IP",
+      "Multithreading",
+    ],
     type: "Systems Engineering",
+    live: "https://github.com/satyamshivhare85/WebServer",
+    github: "https://github.com/satyamshivhare85/WebServer",
     icon: <TerminalSquare className="w-5 h-5" />,
     color: "amber",
     glow: "from-amber-500/20",
     textHover: "group-hover:text-amber-400",
     borderHover: "hover:border-amber-500/50",
+  },
+
+  {
+    title: "SecureAuthX",
+    duration: "Freelance Project",
+    tagline: "Enterprise Authentication & Authorization System",
+    description:
+      "Built a scalable backend authentication architecture implementing JWT authentication, RBAC authorization, Redis caching, CSRF protection, and secure session handling optimized for production-grade applications.",
+    metrics: [
+      "40% Faster Read Operations",
+      "RBAC Authorization",
+      "Redis Session Optimization",
+    ],
+    tech: [
+      "Node.js",
+      "Express.js",
+      "JWT",
+      "Redis",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    award: "US Freelance Project",
+    type: "Backend Security",
+    icon: <Cpu className="w-5 h-5" />,
+    color: "cyan",
+    glow: "from-cyan-500/20",
+    textHover: "group-hover:text-cyan-400",
+    borderHover: "hover:border-cyan-500/50",
   },
 ];

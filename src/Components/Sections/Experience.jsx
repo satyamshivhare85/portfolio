@@ -12,7 +12,7 @@ import {
 import techvrikshaImg from "../../assets/TechVrisksha.jpeg";
 import gfgImg from "../../assets/Gfg.jpeg";
 import geminiImg from "../../assets/projectExpo.jpeg";
-import bcgImg from "../../assets/Gfg.jpeg"; 
+import bcgImg from "../../assets/bcg.png"; 
 import leetcode from "../../assets/leetcode.png";
 
 // --- DATA ---
@@ -20,7 +20,7 @@ const EXPERIENCES = [
   {
     role: "Freelance Backend Developer",
     company: "Auth System for 10K+ Users",
-    duration: "2024 - PRESENT",
+    duration: "2026 jan - march",
     points: [
       "Designed JWT-based authentication with RBAC authorization protocols.",
       "Improved performance using Redis caching achieving 40% faster read operations.",
@@ -56,7 +56,7 @@ const EXPERIENCES = [
   {
     role: "Data Science Virtual Intern",
     company: "BCG (Forage)",
-    duration: "2022",
+    duration: "2025",
     points: [
       "Conducted data analytics and customer churn prediction modeling.",
       "Engineered features and visualized data insights for strategic consulting.",
@@ -73,8 +73,8 @@ const EXPERIENCES = [
   },
   {
     role: "Technology Virtual Intern",
-    company: "Deloitte (Forage)",
-    duration: "2022",
+    company: "Electronics Art",
+    duration: "2025-april",
     points: [
       "Completed engineering job simulation focused on software architecture.",
       "Analyzed technical requirements and optimized database structures.",
@@ -92,7 +92,7 @@ const EXPERIENCES = [
   {
     role: "Full Stack Certification",
     company: "Backend + Frontend Systems",
-    duration: "2024",
+    duration: "2025",
     points: [
       "Validated expertise in end-to-end web application development.",
       "Mastered modern frontend frameworks and robust backend architectures.",
@@ -134,14 +134,14 @@ const AWARDS = [
   {
     title: "BCG Data Science Experience",
     subtitle: "Customer Churn & ML Analytics",
-    year: "2024",
+    year: "2025",
     image: bcgImg,
     glow: "from-blue-500/20",
   },
   {
     title: "600+ DSA Problems Solved",
     subtitle: "LeetCode + GeeksForGeeks",
-    year: "2025",
+    year: "2024-current",
     image: leetcode,
     glow: "from-amber-500/20",
   }
